@@ -14,6 +14,7 @@ Inspired by https://github.com/htpcBeginner/docker-traefik I am trying to set up
 - I am unable to alter the default certificates
 
 ```
+unable to generate a certificate for the domains [whoami.dataweeder.cloud]: error: one or more domains had a problem:\n[whoami.dataweeder.cloud] time limit exceeded: last error: NS max.ns.cloudflare.com. returned NXDOMAIN for _acme-challenge.whoami.dataweeder.cloud.\n" routerName=whoami-rtr@docker rule="Host(`whoami.dataweeder.cloud`)" providerName=dns-cloudflare.acme ACME CA="https://acme-staging-v02.api.letsencrypt.org/directory"
 traefik  | time="2023-03-05T16:17:53Z" level=debug msg="No default certificate, fallback to the internal generated certificate" tlsStoreName=default
 ```
 
