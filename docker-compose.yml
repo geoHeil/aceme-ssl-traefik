@@ -133,7 +133,7 @@ services:
       ## defalut certs from LS
       - "traefik.tls.stores.default.defaultgeneratedcert.resolver=dns-cloudflare"
       - "traefik.tls.stores.default.defaultgeneratedcert.domain.main=$DOMAINNAME_CLOUD_SERVER"
-      - "traefik.tls.stores.default.defaultgeneratedcert.domain.sans=whoami.$DOMAINNAME_CLOUD_SERVER"
+      #- "traefik.tls.stores.default.defaultgeneratedcert.domain.sans=whoami.$DOMAINNAME_CLOUD_SERVER"
 
   # WhoAmI - For Testing and Troubleshooting
   whoami:
